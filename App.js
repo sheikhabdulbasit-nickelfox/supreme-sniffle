@@ -1,11 +1,13 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, Text} from 'react-native';
+import {StyleSheet} from 'react-native';
+import PublicStackNavigator from './Source/Navigators/PublicStackNavigator';
+import {NavigationContainer} from '@react-navigation/native';
 
 const App = () => {
   return (
-    <SafeAreaView style={styles.sectionContainer}>
-      <Text>abcd</Text>
-    </SafeAreaView>
+    <NavigationContainer>
+      <PublicStackNavigator />
+    </NavigationContainer>
   );
 };
 
